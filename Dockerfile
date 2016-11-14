@@ -6,7 +6,7 @@ WORKDIR /usr/app
 
 # Install app dependencies
 COPY package.json /usr/app/
-RUN npm install --production --registry=https://registry.npm.taobao.org
+RUN npm install --production --silent --registry=https://registry.npm.taobao.org
 
 # Bundle app source
 COPY src /usr/app/src
