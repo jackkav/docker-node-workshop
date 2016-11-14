@@ -6,13 +6,17 @@
   "license": "ISC",
   "main": "server.js",
   "scripts": {
-  "clean": "rm -rf build && mkdir build",
-  "build-server": "babel -d ./build ./src -s",
-  "build": "npm run clean && npm run build-server",
-  "start": "node ./build/server.js",
-  "debug": "node --debug ./build/server.js",
-  "dev" : "babel-node src/server.js"
-},
+    "clean": "rm -rf build && mkdir build",
+    "build-server": "babel -d ./build ./src -s",
+    "build": "npm run clean && npm run build-server",
+    "start": "node ./build/server.js",
+    "debug": "node --debug ./build/server.js",
+    "dev" : "babel-node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackkav/docker-node-workshop"
+  },
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-preset-latest": "^6.16.0",
