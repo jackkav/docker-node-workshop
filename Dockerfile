@@ -10,9 +10,11 @@ RUN npm install --production --silent --registry=https://registry.npm.taobao.org
 
 # Bundle app source
 COPY src /usr/app/src
+RUN npm run build
+COPY build /usr/app/build
 
 ENV NODE_ENV=production
 
 EXPOSE 8080
-USER node
+
 CMD [ "npm", "start" ]
