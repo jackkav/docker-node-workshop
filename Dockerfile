@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node:7.0.0-slim
 
 # Create app directory
 RUN mkdir -p /usr/app
@@ -14,5 +14,5 @@ COPY src /usr/app/src
 ENV NODE_ENV=production
 
 EXPOSE 8080
-
+USER node
 CMD [ "npm", "start" ]
