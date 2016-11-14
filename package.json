@@ -6,9 +6,11 @@
   "license": "ISC",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "babel-node src/server.js"
   },
   "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
     "express": "^4.13.3"
   }
 }
