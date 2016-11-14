@@ -1,12 +1,12 @@
 {
   "name": "docker-workshop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node.js on Docker",
   "author": "Jack Kavanagh",
   "license": "ISC",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node src/server.js"
   },
   "dependencies": {
     "express": "^4.13.3"
